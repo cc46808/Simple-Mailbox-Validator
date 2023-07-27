@@ -32,7 +32,8 @@ python validator.py
 
 When you run the script for the first time, it will prompt you for your MailboxValidator API key. The key will be saved in a configuration file (`config.ini`) in the same directory as the script, and will be used for subsequent runs. If you need to change the API key, you can edit the configuration file.
 
-The script will then prompt you to enter the path to your CSV file. The CSV file should contain the email addresses to be validated, with one email address per line.
+The script will then prompt you to enter the path to your CSV file. The CSV file should contain the email addresses to be validated in the
+****FIRST COLUMN ONLY****, with one email address per line.
 
 The script will validate each email in the CSV file, displaying a progress bar in the terminal. The validation results will be written to a new CSV file in the same directory as the original file. The new file will have the same name as the original file, but with `_results` appended before the file extension. Each row in the results file will contain the validation result for one email.
 
